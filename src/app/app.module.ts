@@ -9,8 +9,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { MenuComponent } from './menu/menu.component';
 
 const appRoutes : Routes =[
+  {path: '', component: MenuComponent, pathMatch:'full'},
   {path: 'about-us', component: AboutComponent, pathMatch:'full'},
   {path: 'contact-us', component: ContactComponent, pathMatch:'full'}
 ];
@@ -21,7 +23,8 @@ const appRoutes : Routes =[
     HeaderComponent,
     FooterComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
