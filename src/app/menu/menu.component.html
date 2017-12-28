@@ -1,13 +1,17 @@
 <div class="page-holder">
-  <h1>Menu</h1>
-  <div class="menu">
-    <div class="menu-slider"></div>
-    <div class="menu-holder">
-      <div class="menu-item"  *ngFor="let menu of menu; let i = index">
-        <h2> {{ menu.title }}</h2>
-        <h3> {{ menu.item[i].name }}</h3>
-        <p>{{ menu.item[i].desc }}</p>
-        <span>{{ menu.item[i].price }}</span>
+  <div class="content-holder">
+    <h1>Menu</h1>
+    <div class="menu">
+      <div class="menu-slider"></div>
+      <div class="menu-holder">
+        <div class="menu-box"  *ngFor="let menu of menu.food">
+          <h2> {{ menu.title }}</h2>
+          <div class="menu-item" *ngFor="let item of menu.item">
+            <h3> {{ item.name }}</h3>
+            <p>{{ item.desc }}</p>
+            <h6>{{ item.price }}</h6>
+          </div>
+        </div>
       </div>
     </div>
   </div>

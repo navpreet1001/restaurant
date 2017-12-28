@@ -1,23 +1,87 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuService } from './menu.service';
-// import { Menu } from './menu.model';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.styl'],
-  providers: [MenuService]
+  styleUrls: ['./menu.component.styl']
 })
 export class MenuComponent implements OnInit {
-  // menu : Menu[];
+  // appMenu =[{
+	// 	"title": "Apetizer"
+	// },{
+  // 	"name": "Paneer Tikka",
+  // 	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+  // 	"price": 152
+  // }, {
+  // 	"name": "Samosa",
+  // 	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+  // 	"price": 110
+  // }, {
+  // 	"name": "Chicken Tikka",
+  // 	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+  // 	"price": 120
+  // }, {
+  // 	"name": "Chicken Wings",
+  // 	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+  // 	"price": 110
+  //
+  // }];
 
-  menu =[];
+  public menu = {
+	"food": [{
+			"title": "Appetizer",
+			"id": "01",
+			"item": [{
+        "name": "Paneer Tikka",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        "price": 152
+				},
+				{
+          "name": "Samosa",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 110
+				},{
+          "name": "Chicken Tikka",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 140
+				},{
+          "name": "Chicken Wings",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 150
+				}
+			]
+		},
+		{
+			"title": "Entree",
+			"id": "02",
+			"item": [{
+          "name": "Pizza",
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+          "price": 130
+				},{
+          "name": "Pasta",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 140
+				},{
+          "name": "Butter Chicken",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 170
+				},{
+          "name": "Sahi Paneer",
+        	"desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A temporibus dolorum animi.",
+        	"price": 160
+				}
+			]
+		}
 
-  constructor(private menuService: MenuService) { }
+	]
+};
+
+  constructor() { }
 
   ngOnInit() {
-    this.menu = this.menuService.getMenu();
-    console.log(this.menu)
+    console.log(this.menu);
+    // console.log(this.test);
   }
 
 }

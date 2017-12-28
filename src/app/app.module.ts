@@ -25,7 +25,7 @@ const appRoutes : Routes =[
     ContactComponent,
     AboutComponent,
     MenuComponent
-  ],
+    ],
   imports: [
     BrowserModule,
     FormsModule,
