@@ -1,15 +1,17 @@
 <div class="page-holder">
   <div class="content-holder">
-    <h1>Menu</h1>
     <div class="menu">
+      <h1>The Menu</h1>
       <div class="menu-slider"></div>
       <div class="menu-holder">
         <div class="menu-box"  *ngFor="let menu of menu.food">
-          <h2> {{ menu.title }}</h2>
+          <div class="menu-title">
+            <h2> {{ menu.title }}</h2>
+          </div>
           <div class="menu-item" *ngFor="let item of menu.item">
             <h3> {{ item.name }}</h3>
+            <h6>{{ item.price| currency:'INR':'code' }}</h6>
             <p>{{ item.desc }}</p>
-            <h6>{{ item.price }}</h6>
           </div>
         </div>
       </div>
