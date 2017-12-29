@@ -1,14 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { AgmCoreModule } from '@agm/core';
 
+import { AgmCoreModule } from '@agm/core';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { FormsModule } from '@angular/forms';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContactComponent } from './contact/contact.component';
-import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
 
 const appRoutes : Routes =[
@@ -24,11 +27,13 @@ const appRoutes : Routes =[
     FooterComponent,
     ContactComponent,
     AboutComponent,
-    MenuComponent
+    MenuComponent,
+    CarouselComponent
     ],
   imports: [
     BrowserModule,
     FormsModule,
+    CarouselModule.forRoot(),
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCSgS2jko8tVjc0F80LUeh3iJFwPLevSQQ'
     }),
