@@ -13,9 +13,13 @@ import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { IndexComponent } from './index/index.component';
+import { SpecialsComponent } from './specials/specials.component';
 
 const appRoutes : Routes =[
-  {path: '', component: MenuComponent, pathMatch:'full'},
+  {path: '', component: IndexComponent, pathMatch:'full'},
+  {path: 'menu', component: MenuComponent, pathMatch:'full'},
+  {path: 'special-menu', component: SpecialsComponent, pathMatch:'full'},
   {path: 'about-us', component: AboutComponent, pathMatch:'full'},
   {path: 'contact-us', component: ContactComponent, pathMatch:'full'}
 ];
@@ -28,7 +32,9 @@ const appRoutes : Routes =[
     ContactComponent,
     AboutComponent,
     MenuComponent,
-    CarouselComponent
+    CarouselComponent,
+    IndexComponent,
+    SpecialsComponent
     ],
   imports: [
     BrowserModule,
