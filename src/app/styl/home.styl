@@ -1,0 +1,113 @@
+.index-image
+  // float left
+  // width 100%
+  min-height 800px
+  background $background-image
+  background-size cover
+  background-attachment  fixed
+
+  .index-logo
+    position absolute
+    top  50%
+    left  50%
+    margin-top  -50px
+    margin-left  -100px
+
+    h1
+      color $logo-dark
+      font-size 60px
+      margin-bottom 24px
+     text-transform uppercase
+
+    .asterisk
+      color $logo-dark
+      line-height 0.5px
+      font-size 40px
+      justify-content center
+
+      &:before,&:after
+        content ""
+        display inline-block
+        position relative
+        vertical-align middle
+        height 4px
+        width 40%
+        margin  -16px 0 0 0
+        background $logo-dark
+
+      &:before
+        margin-right 10px
+
+      &:after
+        margin-left 10px
+
+
+.square
+  float left
+  width 1200px
+  padding 0 0 0 20px
+  margin 0 0 50px 0
+  // background #345
+
+  h2
+    color $heading
+    padding 0
+    margin 20px 0 20px 0
+    font italic small-caps bold 41px/41px fantasy
+  p
+    padding 0
+    margin 0 0 20px 0
+
+  .square-two
+    float left
+    width 570px
+    padding 0
+    margin 0 20px 0 0
+    // background $test
+
+    img
+      width 100%
+      height 300px
+
+    h2
+      width 100%
+      text-align center
+
+  .square-three
+    float left
+    width 373px
+    padding 15px 15px
+    margin 0 20px 0 0
+    // background $test
+    border $border
+
+    .square-image
+      float left
+      width 341px
+      height 200px
+      margin 0 0 10px 0
+      border $border
+
+      img
+        width 100%
+        height 100%
+
+    .submit
+      float left
+      width 169px
+      margin 0 0 0 85px
+      border $border
+      border-radius 8px
+      background $button
+
+      h6
+        float left
+        width 100%
+        margin 0
+        padding 10px 0
+        text-align center
+        font-weight 600
+        font-size 24px
+        line-height 26px
+        color $white
+        letter-spacing 1.5px
