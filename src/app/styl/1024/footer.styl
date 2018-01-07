@@ -16,8 +16,10 @@ footer
 
 		.footer-holder
 			position relative
-			width 1024px
+			width 740px
 			margin 0 auto
+			// height 200px
+			// background $logo
 
 			h3
 				float: left
@@ -26,36 +28,53 @@ footer
 				font-weight 500
 				font-size 16px
 				line-height 16px
-				color #000
-				border-bottom 1px solid #333
-				text-shadow 1px 1px 1px #000
+				color $font
+				border-bottom 1px solid $grey
+				text-shadow 1px 1px 1px $grey
 
 			h5
 				float left
 				width 100%
 				margin 0
-				font-weight 450
+				font-weight 400
 				font-size 14px
-				line-height 19px
-				color #333
+				line-height 21px
+				color $grey
 
 			h6
 				float left
 				width 100%
 				margin 0
 				font-weight 400
-				font-size 14px
+				font-size 13px
 				line-height 17px
-				color #333
+				color $grey
 
-			.row
+			.detail
 				float left
-				// temporary Width
 				width 190px
 				padding: 0 0 20px 0
-				margin 0 10px
+				margin 0 20px 0 0
 
-				// .row
-				// 	float left
-				// 	width 100%
-				// 	padding 0 10px
+			.link
+				float left
+				width 140px
+				padding: 0 0 20px 0
+				margin 0 20px 0 0
+
+				h5
+					margin 0 0 4px 0
+					font-size 14px
+					line-height 19px
+					cursor pointer
+
+				h5:hover
+					color $font
+
+			.icons
+				float left
+				width 100%
+
+				.svg-inline--fa
+					margin 0 0 0 10px
+					cursor pointer
