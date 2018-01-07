@@ -5,6 +5,7 @@
   background $background-image
   background-size cover
   background-attachment  fixed
+  margin 0 0 30px 0
 
   .index-logo
     position absolute
@@ -58,6 +59,20 @@
     padding 0
     margin 0 0 20px 0
 
+  .anchor
+    width 170px
+    color $logo
+    text-align center
+    padding 0
+    margin 0 0 0 200px
+    border-bottom 2px $logo solid
+    font italic small-caps bold 21px/26px fantasy
+    cursor pointer
+
+  .anchor:hover
+    text-shadow 1px 0px 1px $logo
+
+
   .square-two
     float left
     width 570px
@@ -79,14 +94,14 @@
     padding 15px 15px
     margin 0 20px 0 0
     // background $test
-    border $border
+    // border $border-light
 
     .square-image
       float left
       width 341px
       height 200px
       margin 0 0 10px 0
-      border $border
+      border $border-light
 
       img
         width 100%
@@ -96,9 +111,10 @@
       float left
       width 169px
       margin 0 0 0 85px
-      border $border
-      border-radius 8px
+      border $border-light
+      border-radius 4px
       background $button
+      cursor pointer
 
       h6
         float left
@@ -106,8 +122,11 @@
         margin 0
         padding 10px 0
         text-align center
-        font-weight 600
-        font-size 24px
+        font-weight 500
+        font-size 18px
         line-height 26px
         color $white
-        letter-spacing 1.5px
+        letter-spacing 2px
+
+    .submit:hover
+      background  radial-gradient(ellipse farthest-corner at 5px 5px , #912323 0%, #b13d25 50%, #9f0e0e 95%)
