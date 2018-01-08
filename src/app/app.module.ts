@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { IndexComponent } from './index/index.component';
 import { SpecialsComponent } from './specials/specials.component';
+import { DataService } from './service/data.service';
 
 const appRoutes : Routes =[
   {path: '', component: IndexComponent, pathMatch:'full'},
@@ -46,7 +47,7 @@ const appRoutes : Routes =[
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

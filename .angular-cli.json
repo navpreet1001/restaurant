@@ -60,7 +60,11 @@
     "class": {
       "spec": false
     },
-    "component": {}
+    "component": {},
+    "serve": {
+      "port": 4200,
+      "host": "192.168.0.14"
+    }
 
   }
 }
