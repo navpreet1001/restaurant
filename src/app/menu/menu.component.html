@@ -16,6 +16,16 @@
             <p>{{ item.desc }}</p>
           </div>
         </div>
+        <div class="menu-box"  >
+          <div class="menu-title">
+            <h2> {{ data.drinks.title }}</h2>
+          </div>
+          <div class="menu-item-small" *ngFor="let item of data.drinks.item">
+            <h3> {{ item.name }}</h3>
+            <h6>{{ item.price| currency:'INR':'code' }}</h6>
+            <p>{{ item.desc }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
