@@ -94,9 +94,10 @@ header
     .header-contact
       display block
       float right
-      width 180px
+      width 178px
       margin 14px 0 0 0
       padding 10px
+      border $border-light
       border-radius 5px
       text-align center
       color $white
@@ -117,3 +118,6 @@ header
         float left
         color $white
         text-decoration none
+    .header-contact:hover
+      background-image -webkit-linear-gradient(left, rgba(#917a65, 0.4), rgba(#917a65, .8))
+      background-image linear-gradient(to right, rgba(#917a65, 0.4), rgba(#917a65, .8))
